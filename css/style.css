@@ -1,0 +1,118 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+/* INTRO */
+.intro {
+    background: linear-gradient(135deg, #3b6ad9, #86b8ff);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.burbuja {
+    background: white;
+    color: #3b6ad9;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-style: italic;
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+.btn-acceso {
+    background: white;
+    color: #3b6ad9;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-acceso:hover {
+    background: #224caa;
+    color: white;
+}
+
+.telefono {
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+/* CENTROS */
+header {
+    background: #3b6ad9;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.volver {
+    display: inline-block;
+    background: white;
+    color: #3b6ad9;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.zona {
+    margin-bottom: 40px;
+}
+
+.zona h2 {
+    color: #3b6ad9;
+    border-bottom: 2px solid #3b6ad9;
+    padding-bottom: 5px;
+}
+
+.centro {
+    background: #f4f8ff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+    background: #3b6ad9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+⚙️ js/main.js (opcional, si querés animar la intro)
+js
+Copiar código
+document.addEventListener("DOMContentLoaded", () => {
+  const boton = document.querySelector(".btn-acceso");
+  boton.addEventListener("mouseenter", () => {
+    boton.style.transform = "scale(1.05)";
+  });
+  boton.addEventListener("mouseleave", () => {
+    boton.style.transform = "scale(1)";
+  });
+});
